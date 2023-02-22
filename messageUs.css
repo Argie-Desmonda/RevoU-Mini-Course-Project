@@ -1,0 +1,160 @@
+.logo {
+  display: flex;
+}
+.button-navbar {
+  display: flex;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+  padding: 10px 30px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  padding: 5px 20px;
+  background-color: #fff;
+  border-width: 1px;
+  width: 120px;
+  height: 60%;
+}
+button:hover {
+  background-color: #000000;
+  color: yellow;
+}
+button:active {
+  opacity: 0.7;
+}
+.button-home {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.button-messageUs {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.button-myProfile {
+  border-left: none;
+}
+.button-portofolio {
+  border-right: none;
+  border-left: none;
+}
+#logo-revoU {
+  height: 50px;
+}
+
+.input-group {
+  margin: 4px 50px;
+  display: flex;
+}
+.label {
+  flex: 1;
+}
+.textbox {
+  flex: 3;
+}
+.textbox-radio {
+  display: flex;
+  flex: 3;
+}
+#submit {
+  margin: 4px 48px;
+}
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+}
+.section-welcome {
+  width: 100%;
+  height: 578px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(17, 0, 255); */
+  display: flex;
+  margin: auto;
+  border-bottom: 3px double #000000;
+}
+.form-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 100px 100px 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px 10px 50px 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.form-output {
+  flex: 1;
+}
+.form-output-label {
+  margin-bottom: 10px;
+}
+.form-output-group {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 50px;
+  width: 50%;
+  background-color: #fff;
+}
+.section-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 243, 194);
+  border-bottom: 3px double black;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    flex-direction: column;
+  }
+  .button-navbar {
+    flex-direction: column;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .button-myProfile {
+    border: 1px solid #000000;
+  }
+  .button-portofolio {
+    border: 1px solid black;
+  }
+}
+
+.text-messageUs {
+  padding: 50px 0 0 100px;
+  background-color: rgb(248, 243, 194);
+}
+footer {
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  bottom: 0px;
+}
+#copyright {
+  margin: 10px;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(248, 243, 194);
+  padding: 50px;
+}
+.image-banner {
+  width: 1366px;
+  height: 578px;
+  display: flex;
+  margin-bottom: 5px;
+  border-radius: 20px;
+}

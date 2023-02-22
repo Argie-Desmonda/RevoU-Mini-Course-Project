@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profile.css" />
+    <title>Our Profile</title>
+  </head>
+
+  <body>
+    <navbar class="container">
+      <div class="logo">
+        <img id="logo-revoU" src="RevoU Logo.png" alt="Logo" />
+      </div>
+      <div class="button-navbar">
+        <a href="index.html"><button class="button-home">Home</button></a>
+        <a href="Profile.html"
+          ><button class="button-myProfile">Our Profile</button></a
+        >
+        <a href="Portofolio.html"
+          ><button class="button-portofolio">Portofolio</button></a
+        >
+        <a href="messageUs.html"
+          ><button class="button-messageUs">Message Us</button></a
+        >
+      </div>
+    </navbar>
+
+    <section class="background">
+      <section class="main">
+        <section class="banner">
+          <img class="image-banner" src="revoU banner.png" alt="Banner1" />
+          <img class="image-banner" src="revoU banner2.jpg" alt="Banner2" />
+          <img class="image-banner" src="revoU banner3.jpg" alt="Banner3" />
+        </section>
+
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs((slideIndex += n));
+          }
+
+          function showDivs(n) {
+            var i;
+            var bannerList = document.getElementsByClassName("image-banner");
+            if (n > bannerList.length) slideIndex = 1;
+            else if (n < 1) slideIndex = bannerList.length;
+
+            for (i = 0; i < bannerList.length; i++) {
+              bannerList[i].style.display = "none";
+            }
+
+            bannerList[slideIndex - 1].style.display = "block";
+          }
+
+          setInterval(() => {
+            plusDivs(1);
+          }, 3000);
+        </script>
+
+        <section class="about">
+          <h1 id="text-aboutUs">About Us</h1>
+          <p id="text-aboutUs-desc">
+            sekolah online (EdTech) yang membekali para murid dengan
+            keterampilan digital yang lagi in-demand di zaman industri teknologi
+            4.0 saat ini. Sampai sekarang, RevoU udah berhasil bantuin 3000+
+            alumni untuk mendapatkan karir impian, maupun mengembangkan bisnis
+            mereka di bidang digital!
+          </p>
+        </section>
+
+        <section class="visionAndMission">
+          <h1 id="text-visionAndMission">Vision and Mission</h1>
+          <section class="visionAndMission-group">
+            <p id="text-visionAndMission-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+              dolorum assumenda eum excepturi nobis velit, earum sapiente illum
+              voluptas mollitia repellat molestias reiciendis rerum eius
+              asperiores. Ad quasi eaque doloremque.
+            </p>
+            <p id="text-visionAndMission-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+              dolorum assumenda eum excepturi nobis velit, earum sapiente illum
+              voluptas mollitia repellat molestias reiciendis rerum eius
+              asperiores. Ad quasi eaque doloremque.
+            </p>
+            <p id="text-visionAndMission-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+              dolorum assumenda eum excepturi nobis velit, earum sapiente illum
+              voluptas mollitia repellat molestias reiciendis rerum eius
+              asperiores. Ad quasi eaque doloremque.
+            </p>
+          </section>
+        </section>  
+      </section>
+    </section>
+
+    <footer><p id="copyright">Created By Argie</p></footer>
+
+  </body>
+</html>

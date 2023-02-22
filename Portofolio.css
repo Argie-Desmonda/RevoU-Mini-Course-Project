@@ -1,0 +1,108 @@
+.logo {
+  display: flex;
+}
+.button-navbar {
+  display: flex;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+  padding: 10px 30px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  padding: 5px 20px;
+  background-color: #fff;
+  border-width: 1px;
+  width: 120px;
+  height: 60%;
+}
+button:hover {
+  background-color: #000000;
+  color: yellow;
+}
+button:active {
+  opacity: 0.7;
+}
+.button-home {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.button-messageUs {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.button-myProfile {
+  border-left: none;
+}
+.button-portofolio {
+  border-right: none;
+  border-left: none;
+}
+#logo-revoU {
+  height: 50px;
+}
+footer {
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#copyright {
+  margin: 10px;
+}
+.testimony {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(252, 252, 196);
+}
+.text-testimony-title {
+  font-weight: 700;
+  font-size: 40px;
+  padding: 40px;
+  background-color: black;
+  color: yellow;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.testimony-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.testimony-image {
+  width: 400px;
+  border-radius: 10px;
+}
+.testimony-text-desc {
+  margin: 10px 150px 10px 150px;
+  padding: 20px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 650px) {
+  .container {
+    flex-direction: column;
+  }
+  .button-navbar {
+    flex-direction: column;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .button-myProfile {
+    border: 1px solid #000000;
+  }
+  .button-portofolio {
+    border: 1px solid black;
+  }
+}
